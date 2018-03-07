@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+          import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { AngularFireAuth } from "angularfire2/auth";
 import { AngularFireDatabase, AngularFireObject } from 'angularfire2/database';
@@ -37,6 +37,18 @@ export class WelcomePage {
       }
       
     } );
+  }
+
+  mainMudanza(){
+    this.navCtrl.push('MudanzaPage');
+  }
+
+  mainElectr(){
+    this.navCtrl.push('ArtiDomesticosPage');
+  }
+
+  mainAnimal(){
+    this.navCtrl.push('AnimalesPage');
   }
 
   logout(){

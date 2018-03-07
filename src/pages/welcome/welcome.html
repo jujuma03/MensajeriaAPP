@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title>Welcome</ion-title>
+    <ion-title text-left >Bienvenido<ion-icon name="exit" (click)="logout()"></ion-icon> </ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,26 +15,22 @@
 
 <ion-content padding>
   
-  <ion-card>
-      <img src="img/mudanza.jpg"/>
-      <div class="card-title">São Paulo</div>
-      <div class="card-subtitle">41 Listings</div>
-    </ion-card>
-  
-    <ion-card>
-      <img src="img/electrodomesticos.jpg"/>
-      <div class="card-title">Amsterdam</div>
-      <div class="card-subtitle">64 Listings</div>
-    </ion-card>
-  
-    <ion-card>
-      <img src="img/animal.jpg"/>
-      <div class="card-title">Madison</div>
-      <div class="card-subtitle">28 Listings</div>
-    </ion-card>
-  
+  <ion-card (click)="mainMudanza()">
+    <img src="img/mudanza.jpg"/>
+    <div class="card-title">Mudanza:</div>
+    <div class="card-subtitle">Departamento, casa, oficina</div>
+  </ion-card>
 
-    <button ion-button (click)="logout()">Salir</button>
+  <ion-card (click)="mainElectr()">
+    <img src="img/electrodomesticos.jpg"/>
+    <div class="card-title">Artículos Domésticos:</div>
+    <div class="card-subtitle">Muebles, Electrodomésticos, Máquinas de Gym</div>
+  </ion-card>
 
+  <ion-card (click)="mainAnimal()">
+    <img src="img/animal.jpg"/>
+    <div class="card-title">Animales:</div>
+    <div class="card-subtitle">Perros, Gatos, Caballos, Ganados</div>
+  </ion-card>
 
 </ion-content>

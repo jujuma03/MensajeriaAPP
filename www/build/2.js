@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 447:
+/***/ 450:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterPageModule", function() { return RegisterPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(511);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(517);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var RegisterPageModule = (function () {
 
 /***/ }),
 
-/***/ 511:
+/***/ 517:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -144,7 +144,7 @@ var RegisterPage = (function () {
     };
     RegisterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-register',template:/*ion-inline-start:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensjaeriaApp\MensajeriaApp\src\pages\register\register.html"*/'<!--\n  Generated template for the RegisterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Register</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n    <ion-item>\n        <ion-label floating>Correo</ion-label>\n        <ion-input type="text" [(ngModel)]= "user.correo" ></ion-input>\n    </ion-item>\n    \n    <ion-item>\n        <ion-label floating>Password</ion-label>\n        <ion-input type="password" [(ngModel)]= "user.contrasena" ></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label floating>Nombre y Apellido</ion-label>\n        <ion-input type="text" [(ngModel)]= "user.nombre" ></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label floating>DNI</ion-label>\n        <ion-input type="number" [(ngModel)]= "user.dni" ></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label floating>Domicilio</ion-label>\n        <ion-input type="text" [(ngModel)]= "user.domicilio" ></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label floating>Telefono</ion-label>\n        <ion-input type="phone" [(ngModel)]= "user.telefono" ></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label floating>Fecha de Nacimiento</ion-label>\n        <ion-input type="date" [(ngModel)]= "user.nacimiento" ></ion-input>\n    </ion-item>\n      \n    <button ion-button (click)="register(user)">Registrar</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensjaeriaApp\MensajeriaApp\src\pages\register\register.html"*/,
+            selector: 'page-register',template:/*ion-inline-start:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\pages\register\register.html"*/'<!--\n  Generated template for the RegisterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Register</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n    <ion-item>\n        <ion-label floating>Correo</ion-label>\n        <ion-input type="text" [(ngModel)]= "user.correo" ></ion-input>\n    </ion-item>\n    \n    <ion-item>\n        <ion-label floating>Password</ion-label>\n        <ion-input type="password" [(ngModel)]= "user.contrasena" ></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label floating>Nombre y Apellido</ion-label>\n        <ion-input type="text" [(ngModel)]= "user.nombre" ></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label floating>DNI</ion-label>\n        <ion-input type="number" [(ngModel)]= "user.dni" ></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label floating>Domicilio</ion-label>\n        <ion-input type="text" [(ngModel)]= "user.domicilio" ></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label floating>Telefono</ion-label>\n        <ion-input type="phone" [(ngModel)]= "user.telefono" ></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label floating>Fecha de Nacimiento</ion-label>\n        <ion-input type="date" [(ngModel)]= "user.nacimiento" ></ion-input>\n    </ion-item>\n      \n    <button ion-button (click)="register(user)">Registrar</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\pages\register\register.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__["a" /* AngularFireDatabase */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])

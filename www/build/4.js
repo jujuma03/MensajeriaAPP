@@ -1,14 +1,14 @@
 webpackJsonp([4],{
 
-/***/ 445:
+/***/ 448:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MisViajesPageModule", function() { return MisViajesPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MudanzaPageModule", function() { return MudanzaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mis_viajes__ = __webpack_require__(509);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mudanza__ = __webpack_require__(515);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var MisViajesPageModule = (function () {
-    function MisViajesPageModule() {
+var MudanzaPageModule = (function () {
+    function MudanzaPageModule() {
     }
-    MisViajesPageModule = __decorate([
+    MudanzaPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__mis_viajes__["a" /* MisViajesPage */],
+                __WEBPACK_IMPORTED_MODULE_2__mudanza__["a" /* MudanzaPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__mis_viajes__["a" /* MisViajesPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__mudanza__["a" /* MudanzaPage */]),
             ],
         })
-    ], MisViajesPageModule);
-    return MisViajesPageModule;
+    ], MudanzaPageModule);
+    return MudanzaPageModule;
 }());
 
-//# sourceMappingURL=mis-viajes.module.js.map
+//# sourceMappingURL=mudanza.module.js.map
 
 /***/ }),
 
-/***/ 509:
+/***/ 515:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MisViajesPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MudanzaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(133);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -57,29 +57,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the MisViajesPage page.
+ * Generated class for the MudanzaPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var MisViajesPage = (function () {
-    function MisViajesPage(navCtrl, navParams) {
+var MudanzaPage = (function () {
+    function MudanzaPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    MisViajesPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad MisViajesPage');
+    MudanzaPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MudanzaPage');
     };
-    MisViajesPage = __decorate([
+    MudanzaPage.prototype.mainMap = function () {
+        this.navCtrl.push('MapPage');
+    };
+    MudanzaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-mis-viajes',template:/*ion-inline-start:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensjaeriaApp\MensajeriaApp\src\pages\mis-viajes\mis-viajes.html"*/'<!--\n  Generated template for the MisViajesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Mis Viajes</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensjaeriaApp\MensajeriaApp\src\pages\mis-viajes\mis-viajes.html"*/,
+            selector: 'page-mudanza',template:/*ion-inline-start:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\pages\mudanza\mudanza.html"*/'<!--\n  Generated template for the MudanzaPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>Mudanza</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-card (click)="mainMap()">\n    <img src="img/departpeque.jpg"/>\n    <div class="card-title">Depart/Casa Pequeña:</div>\n    <div class="card-subtitle">1 habitación, 1 Cocina</div>\n  </ion-card>\n\n  <ion-card (click)="mainMap()">\n    <img src="img/departmedio.jpg"/>\n    <div class="card-title">Depart/Casa Mediana:</div>\n    <div class="card-subtitle">2 habitaciones, 1 Cocina, 1 Sala</div>\n  </ion-card>\n\n  <ion-card (click)="mainMap()">\n    <img src="img/departgrande.jpg"/>\n    <div class="card-title">Depart/Casa Grande:</div>\n    <div class="card-subtitle">3 habitaciones, 1 Cocina, 1 Sala</div>\n  </ion-card>\n\n  <ion-card (click)="mainMap()">\n    <img src="img/oficina.jpg"/>\n    <div class="card-title">Oficina:</div>\n    <div class="card-subtitle">Cuarto de estudio a cualquier tamaño</div>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\pages\mudanza\mudanza.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], MisViajesPage);
-    return MisViajesPage;
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
+    ], MudanzaPage);
+    return MudanzaPage;
+    var _a, _b;
 }());
 
-//# sourceMappingURL=mis-viajes.js.map
+//# sourceMappingURL=mudanza.js.map
 
 /***/ })
 

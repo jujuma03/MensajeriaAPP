@@ -1,4 +1,4 @@
-webpackJsonp([7],{
+webpackJsonp([10],{
 
 /***/ 144:
 /***/ (function(module, exports) {
@@ -21,32 +21,44 @@ webpackEmptyAsyncContext.id = 144;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"../pages/login/login.module": [
+	"../pages/animales/animales.module": [
 		442,
+		9
+	],
+	"../pages/arti-domesticos/arti-domesticos.module": [
+		443,
+		8
+	],
+	"../pages/login/login.module": [
+		444,
 		0
 	],
 	"../pages/main/main.module": [
-		443,
-		6
+		445,
+		7
 	],
 	"../pages/map/map.module": [
-		444,
-		5
+		446,
+		6
 	],
 	"../pages/mis-viajes/mis-viajes.module": [
-		445,
+		447,
+		5
+	],
+	"../pages/mudanza/mudanza.module": [
+		448,
 		4
 	],
 	"../pages/perfil/perfil.module": [
-		446,
+		449,
 		3
 	],
 	"../pages/register/register.module": [
-		447,
+		450,
 		2
 	],
 	"../pages/welcome/welcome.module": [
-		448,
+		451,
 		1
 	]
 };
@@ -128,10 +140,13 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* MyApp */], {}, {
                     links: [
+                        { loadChildren: '../pages/animales/animales.module#AnimalesPageModule', name: 'AnimalesPage', segment: 'animales', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/arti-domesticos/arti-domesticos.module#ArtiDomesticosPageModule', name: 'ArtiDomesticosPage', segment: 'arti-domesticos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/main/main.module#PageModule', name: 'Main', segment: 'main', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/map/map.module#MapPageModule', name: 'MapPage', segment: 'map', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mis-viajes/mis-viajes.module#MisViajesPageModule', name: 'MisViajesPage', segment: 'mis-viajes', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/mudanza/mudanza.module#MudanzaPageModule', name: 'MudanzaPage', segment: 'mudanza', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/perfil/perfil.module#PerfilPageModule', name: 'PerfilPage', segment: 'perfil', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
@@ -193,7 +208,7 @@ var MyApp = (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensjaeriaApp\MensajeriaApp\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensjaeriaApp\MensajeriaApp\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
