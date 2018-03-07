@@ -26,31 +26,31 @@ var map = {
 		9
 	],
 	"../pages/arti-domesticos/arti-domesticos.module": [
-		443,
+		451,
 		8
 	],
 	"../pages/login/login.module": [
-		444,
+		448,
 		0
 	],
 	"../pages/main/main.module": [
-		445,
+		443,
 		7
 	],
 	"../pages/map/map.module": [
-		446,
+		444,
 		6
 	],
 	"../pages/mis-viajes/mis-viajes.module": [
-		447,
+		445,
 		5
 	],
 	"../pages/mudanza/mudanza.module": [
-		448,
+		446,
 		4
 	],
 	"../pages/perfil/perfil.module": [
-		449,
+		447,
 		3
 	],
 	"../pages/register/register.module": [
@@ -58,7 +58,7 @@ var map = {
 		2
 	],
 	"../pages/welcome/welcome.module": [
-		451,
+		449,
 		1
 	]
 };
@@ -108,7 +108,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__ = __webpack_require__(278);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2_database__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_admob_free__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_admob_free__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(436);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_firebase_config__ = __webpack_require__(437);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -141,15 +141,15 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/animales/animales.module#AnimalesPageModule', name: 'AnimalesPage', segment: 'animales', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/arti-domesticos/arti-domesticos.module#ArtiDomesticosPageModule', name: 'ArtiDomesticosPage', segment: 'arti-domesticos', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/main/main.module#PageModule', name: 'Main', segment: 'main', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/map/map.module#MapPageModule', name: 'MapPage', segment: 'map', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mis-viajes/mis-viajes.module#MisViajesPageModule', name: 'MisViajesPage', segment: 'mis-viajes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mudanza/mudanza.module#MudanzaPageModule', name: 'MudanzaPage', segment: 'mudanza', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/perfil/perfil.module#PerfilPageModule', name: 'PerfilPage', segment: 'perfil', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/arti-domesticos/arti-domesticos.module#ArtiDomesticosPageModule', name: 'ArtiDomesticosPage', segment: 'arti-domesticos', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_5_angularfire2__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_10__app_firebase_config__["a" /* FIREBASE_CONFIG */]),
@@ -208,7 +208,7 @@ var MyApp = (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Reset\Desktop\MensajeriaAPP\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\Reset\Desktop\MensajeriaAPP\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);

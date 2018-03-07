@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 451:
+/***/ 449:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WelcomePageModule", function() { return WelcomePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__welcome__ = __webpack_require__(518);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__welcome__ = __webpack_require__(516);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var WelcomePageModule = (function () {
 
 /***/ }),
 
-/***/ 518:
+/***/ 516:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -103,7 +103,7 @@ var WelcomePage = (function () {
     };
     WelcomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-welcome',template:/*ion-inline-start:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\pages\welcome\welcome.html"*/'<!--\n  Generated template for the WelcomePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title text-left >Bienvenido<ion-icon name="exit" (click)="logout()"></ion-icon> </ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  \n  <ion-card (click)="mainMudanza()">\n    <img src="img/mudanza.jpg"/>\n    <div class="card-title">Mudanza:</div>\n    <div class="card-subtitle">Departamento, casa, oficina</div>\n  </ion-card>\n\n  <ion-card (click)="mainElectr()">\n    <img src="img/electrodomesticos.jpg"/>\n    <div class="card-title">Artículos Domésticos:</div>\n    <div class="card-subtitle">Muebles, Electrodomésticos, Máquinas de Gym</div>\n  </ion-card>\n\n  <ion-card (click)="mainAnimal()">\n    <img src="img/animal.jpg"/>\n    <div class="card-title">Animales:</div>\n    <div class="card-subtitle">Perros, Gatos, Caballos, Ganados</div>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\pages\welcome\welcome.html"*/,
+            selector: 'page-welcome',template:/*ion-inline-start:"C:\Users\Reset\Desktop\MensajeriaAPP\src\pages\welcome\welcome.html"*/'<!--\n\n  Generated template for the WelcomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <ion-title text-left >Bienvenido<ion-icon name="exit" (click)="logout()"></ion-icon> </ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  \n\n  <ion-card (click)="mainMudanza()">\n\n    <img src="img/mudanza.jpg"/>\n\n    <div class="card-title">Mudanza:</div>\n\n    <div class="card-subtitle">Departamento, casa, oficina</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="mainElectr()">\n\n    <img src="img/electrodomesticos.jpg"/>\n\n    <div class="card-title">Artículos Domésticos:</div>\n\n    <div class="card-subtitle">Muebles, Electrodomésticos, Máquinas de Gym</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="mainAnimal()">\n\n    <img src="img/animal.jpg"/>\n\n    <div class="card-title">Animales:</div>\n\n    <div class="card-subtitle">Perros, Gatos, Caballos, Ganados</div>\n\n  </ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Reset\Desktop\MensajeriaAPP\src\pages\welcome\welcome.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__["a" /* AngularFireDatabase */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])

@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 449:
+/***/ 447:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PerfilPageModule", function() { return PerfilPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__perfil__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__perfil__ = __webpack_require__(479);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var PerfilPageModule = (function () {
 
 /***/ }),
 
-/***/ 516:
+/***/ 479:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113,7 +113,7 @@ var PerfilPage = (function () {
     };
     PerfilPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-perfil',template:/*ion-inline-start:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\pages\perfil\perfil.html"*/'<!--\n  Generated template for the PerfilPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Perfil <ion-icon name="exit" (click)="logout()"></ion-icon> </ion-title>\n    \n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n    <img src="{{user.fotoPerfil}}"/>\n\n    <p> {{user.nombre}} &nbsp; {{user.apellido}} <p>\n    <p> {{user.correo}} <p>\n    <p> {{user.dni}} <p>\n    <p> {{user.domicilio}} <p>\n    <p> {{user.telefono}} <p>\n    <p> {{user.nacimiento}} <p>\n\n  <ion-item>\n    <ion-label floating>Nombre</ion-label>\n    <ion-input [(ngModel)]="user.nombre"></ion-input>\n  </ion-item>\n\n  <ion-item>\n      <ion-label floating>Apellido</ion-label>\n      <ion-input [(ngModel)]="user.apellido"></ion-input>\n    </ion-item>\n\n  <ion-item>\n      <ion-label floating>Correo eléctronico</ion-label>\n      <ion-input [(ngModel)]="user.correo"></ion-input>\n  </ion-item>\n\n  <ion-item>\n      <ion-label floating>Cambiar contraseña</ion-label>\n      <ion-input [(ngModel)]="user.contrasena"></ion-input>\n  </ion-item>\n\n  <ion-item>\n      <ion-label floating>DNI</ion-label>\n      <ion-input [(ngModel)]="user.dni"></ion-input>\n  </ion-item>\n\n  <ion-item>\n      <ion-label floating>Domicilio</ion-label>\n      <ion-input [(ngModel)]="user.domicilio"></ion-input>\n    </ion-item>\n  \n    <ion-item>\n        <ion-label floating>Teléfono</ion-label>\n        <ion-input [(ngModel)]="user.telefono"></ion-input>\n    </ion-item>\n  \n    <ion-item>\n        <ion-label floating>Nacimiento</ion-label>\n        <ion-input [(ngModel)]="user.nacimiento"></ion-input>\n    </ion-item>\n\n\n  <button ion-button clear block (click)="saveProfile()">Actualizar Perfil</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\pages\perfil\perfil.html"*/,
+            selector: 'page-perfil',template:/*ion-inline-start:"C:\Users\Reset\Desktop\MensajeriaAPP\src\pages\perfil\perfil.html"*/'<!--\n\n  Generated template for the PerfilPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Perfil <ion-icon name="exit" (click)="logout()"></ion-icon> </ion-title>\n\n    \n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n    <img src="{{user.fotoPerfil}}"/>\n\n\n\n    <p> {{user.nombre}} &nbsp; {{user.apellido}} <p>\n\n    <p> {{user.correo}} <p>\n\n    <p> {{user.dni}} <p>\n\n    <p> {{user.domicilio}} <p>\n\n    <p> {{user.telefono}} <p>\n\n    <p> {{user.nacimiento}} <p>\n\n\n\n  <ion-item>\n\n    <ion-label floating>Nombre</ion-label>\n\n    <ion-input [(ngModel)]="user.nombre"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n      <ion-label floating>Apellido</ion-label>\n\n      <ion-input [(ngModel)]="user.apellido"></ion-input>\n\n    </ion-item>\n\n\n\n  <ion-item>\n\n      <ion-label floating>Correo eléctronico</ion-label>\n\n      <ion-input [(ngModel)]="user.correo"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n      <ion-label floating>Cambiar contraseña</ion-label>\n\n      <ion-input [(ngModel)]="user.contrasena"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n      <ion-label floating>DNI</ion-label>\n\n      <ion-input [(ngModel)]="user.dni"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n      <ion-label floating>Domicilio</ion-label>\n\n      <ion-input [(ngModel)]="user.domicilio"></ion-input>\n\n    </ion-item>\n\n  \n\n    <ion-item>\n\n        <ion-label floating>Teléfono</ion-label>\n\n        <ion-input [(ngModel)]="user.telefono"></ion-input>\n\n    </ion-item>\n\n  \n\n    <ion-item>\n\n        <ion-label floating>Nacimiento</ion-label>\n\n        <ion-input [(ngModel)]="user.nacimiento"></ion-input>\n\n    </ion-item>\n\n\n\n\n\n  <button ion-button clear block (click)="saveProfile()">Actualizar Perfil</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Reset\Desktop\MensajeriaAPP\src\pages\perfil\perfil.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__["a" /* AngularFireDatabase */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])

@@ -1,6 +1,6 @@
 webpackJsonp([4],{
 
-/***/ 448:
+/***/ 446:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MudanzaPageModule", function() { return MudanzaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mudanza__ = __webpack_require__(515);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mudanza__ = __webpack_require__(478);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var MudanzaPageModule = (function () {
 
 /***/ }),
 
-/***/ 515:
+/***/ 478:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75,12 +75,11 @@ var MudanzaPage = (function () {
     };
     MudanzaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-mudanza',template:/*ion-inline-start:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\pages\mudanza\mudanza.html"*/'<!--\n  Generated template for the MudanzaPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>Mudanza</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-card (click)="mainMap()">\n    <img src="img/departpeque.jpg"/>\n    <div class="card-title">Depart/Casa Pequeña:</div>\n    <div class="card-subtitle">1 habitación, 1 Cocina</div>\n  </ion-card>\n\n  <ion-card (click)="mainMap()">\n    <img src="img/departmedio.jpg"/>\n    <div class="card-title">Depart/Casa Mediana:</div>\n    <div class="card-subtitle">2 habitaciones, 1 Cocina, 1 Sala</div>\n  </ion-card>\n\n  <ion-card (click)="mainMap()">\n    <img src="img/departgrande.jpg"/>\n    <div class="card-title">Depart/Casa Grande:</div>\n    <div class="card-subtitle">3 habitaciones, 1 Cocina, 1 Sala</div>\n  </ion-card>\n\n  <ion-card (click)="mainMap()">\n    <img src="img/oficina.jpg"/>\n    <div class="card-title">Oficina:</div>\n    <div class="card-subtitle">Cuarto de estudio a cualquier tamaño</div>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\User\Desktop\ResetPeru\EnvioApp\Mensajeria\MensajeriaAPP\MensajeriaAPP\src\pages\mudanza\mudanza.html"*/,
+            selector: 'page-mudanza',template:/*ion-inline-start:"C:\Users\Reset\Desktop\MensajeriaAPP\src\pages\mudanza\mudanza.html"*/'<!--\n\n  Generated template for the MudanzaPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <ion-title>Mudanza</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <ion-card (click)="mainMap()">\n\n    <img src="img/departpeque.jpg"/>\n\n    <div class="card-title">Depart/Casa Pequeña:</div>\n\n    <div class="card-subtitle">1 habitación, 1 Cocina</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="mainMap()">\n\n    <img src="img/departmedio.jpg"/>\n\n    <div class="card-title">Depart/Casa Mediana:</div>\n\n    <div class="card-subtitle">2 habitaciones, 1 Cocina, 1 Sala</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="mainMap()">\n\n    <img src="img/departgrande.jpg"/>\n\n    <div class="card-title">Depart/Casa Grande:</div>\n\n    <div class="card-subtitle">3 habitaciones, 1 Cocina, 1 Sala</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="mainMap()">\n\n    <img src="img/oficina.jpg"/>\n\n    <div class="card-title">Oficina:</div>\n\n    <div class="card-subtitle">Cuarto de estudio a cualquier tamaño</div>\n\n  </ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Reset\Desktop\MensajeriaAPP\src\pages\mudanza\mudanza.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], MudanzaPage);
     return MudanzaPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=mudanza.js.map
