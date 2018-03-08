@@ -5,7 +5,8 @@ import { AngularFireAuth } from "angularfire2/auth";
 import { error } from '@firebase/database/dist/esm/src/core/util/util';
 import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
 import firebase from "firebase";
-
+import { Main } from '../main/main';
+import { RegisterPage } from '../register/register';
 /**
  * Generated class for the LoginPage page.
  *
@@ -60,7 +61,7 @@ export class LoginPage {
       const result = await this.afAuth.auth.signInWithEmailAndPassword(user.correo, user.contrasena);
       if(result){ 
         this.alert('Éxito, tú estas conectado');
-        this.navCtrl.setRoot('Main'); 
+        this.navCtrl.setRoot(Main); 
       }
     } catch(e) {
       console.error(e);
@@ -69,7 +70,7 @@ export class LoginPage {
   }
 
   register(){
-    this.navCtrl.push('RegisterPage');
+    this.navCtrl.push(RegisterPage);
   }
 
   loginRedes(provider){
@@ -86,7 +87,7 @@ export class LoginPage {
         this.afAuth.auth.signInWithPopup(signInProvider).then( res=> {
           if(res){
             this.alert('Éxito, tú estas conectado');
-            this.navCtrl.setRoot('Main'); 
+            this.navCtrl.setRoot(Main); 
             }
           }
         )

@@ -1,9 +1,12 @@
           import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController,App } from 'ionic-angular';
 import { AngularFireAuth } from "angularfire2/auth";
 import { AngularFireDatabase, AngularFireObject } from 'angularfire2/database';
 import { User } from '../../models/user';
-
+import { MudanzaPage } from '../mudanza/mudanza';
+import { ArtiDomesticosPage } from '../arti-domesticos/arti-domesticos';
+import { AnimalesPage } from '../animales/animales';
+import { LoginPage} from '../login/login';
 /**
  * Generated class for the WelcomePage page.
  *
@@ -23,7 +26,7 @@ export class WelcomePage {
 
 
   constructor(private afAuth: AngularFireAuth, private afDatabase: AngularFireDatabase, private toast: ToastController,
-    public navCtrl: NavController, public navParams: NavParams) {
+    public navCtrl: NavController, public navParams: NavParams,public appCtrl: App) {
   }
 
   ionViewDidLoad() {
@@ -40,22 +43,19 @@ export class WelcomePage {
   }
 
   mainMudanza(){
-    this.navCtrl.push('MudanzaPage');
+    this.navCtrl.push(MudanzaPage);
   }
 
   mainElectr(){
-    this.navCtrl.push('ArtiDomesticosPage');
+    this.navCtrl.push(ArtiDomesticosPage);
   }
 
   mainAnimal(){
-    this.navCtrl.push('AnimalesPage');
+    this.navCtrl.push(AnimalesPage);
   }
 
   logout(){
-    this.afAuth.auth.signOut();
-
-    this.user.loggedin = false;
-    this.navCtrl.push("LoginPage");
+    this.appCtrl.getRootNav (). setRoot (LoginPage); 
   }
 
 }

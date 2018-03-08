@@ -8,13 +8,33 @@ import { AngularFireAuthModule } from "angularfire2/auth";
 import { AngularFireDatabase, AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdMobFree } from '@ionic-native/admob-free';
 
+import { LoginPage } from '../pages/login/login';
+import { Main } from '../pages/main/main';
+import { RegisterPage } from '../pages/register/register';
+import {WelcomePage} from '../pages/welcome/welcome';
+import { MapPage } from '../pages/map/map';
+import { MisViajesPage } from '../pages/mis-viajes/mis-viajes';
+import { PerfilPage } from '../pages/perfil/perfil';
+import { MudanzaPage } from '../pages/mudanza/mudanza';
+import { ArtiDomesticosPage } from '../pages/arti-domesticos/arti-domesticos';
+import { AnimalesPage } from '../pages/animales/animales';
 
 import { MyApp } from './app.component';
 import { FIREBASE_CONFIG } from './app.firebase.config';
 
 @NgModule({
   declarations: [
-    MyApp
+    MyApp,
+    LoginPage,
+    Main,
+    RegisterPage,
+    WelcomePage,
+    MapPage,
+    MisViajesPage,
+    PerfilPage,
+    MudanzaPage,
+    ArtiDomesticosPage,
+    AnimalesPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +45,17 @@ import { FIREBASE_CONFIG } from './app.firebase.config';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
+    MyApp,
+    LoginPage,
+    Main,
+    RegisterPage,
+    WelcomePage,
+    MapPage,
+    MisViajesPage,
+    PerfilPage,
+    MudanzaPage,
+    ArtiDomesticosPage,
+    AnimalesPage
   ],
   providers: [
     StatusBar,

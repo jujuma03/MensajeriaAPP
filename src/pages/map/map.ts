@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { IonicPage, NavController, NavParams,App } from 'ionic-angular';
+import {LoginPage } from '../login/login';
 /**
  * Generated class for the MapPage page.
  *
@@ -15,11 +15,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MapPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public appCtrl:App) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MapPage');
   }
-
+  logout(){
+    this.appCtrl.getRootNav (). setRoot (LoginPage); 
+  }
 }

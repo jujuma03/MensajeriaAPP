@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController,App } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { User } from '../../models/user';
 import { AngularFireDatabase } from "angularfire2/database";
-
+import { LoginPage } from '../login/login';
 /**
  * Generated class for the PerfilPage page.
  *
@@ -21,7 +21,7 @@ export class PerfilPage {
   user = {} as User;
 
   constructor(private alertCtrl: AlertController, private afAuth: AngularFireAuth, private afDatabase: AngularFireDatabase,
-    public navCtrl: NavController, public navParams: NavParams) {
+    public navCtrl: NavController, public navParams: NavParams,public appCtrl: App) {
   }
 
   ionViewDidLoad() {
@@ -47,19 +47,8 @@ export class PerfilPage {
         this.afDatabase.object(`cliente/${auth.uid}`).set(this.user).then(() => this.alert("Datos del perfil Actualizados"))
     });
   }
-/*
-  logout(){
-    this.afAuth.auth.signOut();
-
-    this.user.loggedin = false;
-    this.navCtrl.setRoot("LoginPage");
-  }
-*/  
   logout () { 
-    this.afAuth.auth.signOut (). then (() => { 
-    this.navCtrl.setRoot ('LoginPage'); 
-        } 
-      ); 
+    this.appCtrl.getRootNav (). setRoot (LoginPage); 
     } 
 
 }
