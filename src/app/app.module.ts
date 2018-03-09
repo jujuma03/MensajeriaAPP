@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import {AngularFireModule} from 'angularfire2';
+import { AgmCoreModule } from '@agm/core';
 import { AngularFireAuthModule } from "angularfire2/auth";
 import { AngularFireDatabase, AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdMobFree } from '@ionic-native/admob-free';
@@ -21,6 +22,8 @@ import { AnimalesPage } from '../pages/animales/animales';
 
 import { MyApp } from './app.component';
 import { FIREBASE_CONFIG } from './app.firebase.config';
+import { MapProvider } from '../providers/map/map';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +44,11 @@ import { FIREBASE_CONFIG } from './app.firebase.config';
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AgmCoreModule.forRoot({
+      apiKey: "AIzaSyCnahpwY4LRTYlzEHnER3B_Y8NR1HzmrVE",
+      libraries: ["places"]
+  })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -61,7 +68,8 @@ import { FIREBASE_CONFIG } from './app.firebase.config';
     StatusBar,
     SplashScreen,
     AdMobFree,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MapProvider
   ]
 })
 export class AppModule {}

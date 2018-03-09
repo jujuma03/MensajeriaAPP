@@ -5,14 +5,23 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar color="primary">
-    <ion-title text-left >Mapa<ion-icon name="exit" (click)="logout()"></ion-icon> </ion-title>
+  <ion-navbar color="app">
+    <ion-title>
+      Auto Complete
+    </ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
-
+    <ion-item>
+        <ion-label floating>Enter Address</ion-label>
+        <ion-input id="origen" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Enter Address</ion-label>
+      <ion-input id="destino" type="text"></ion-input>
+  </ion-item>
+  <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
+    <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+  </agm-map>
 </ion-content>
